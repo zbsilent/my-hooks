@@ -20,6 +20,7 @@ const ChildNode = (props) => {
     uu.push(
       <li
         index={index}
+        key={index}
         onMouseOver={closeSelf}
         style={{ display: state ? "block" : "none" }}
       >
