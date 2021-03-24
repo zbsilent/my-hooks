@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const ChildNode = (props) => {
+const Item = (props) => {
 	const [state, setState] = useState(false);
 
 	useEffect(() => {
@@ -24,4 +24,4 @@ const ChildNode = (props) => {
 		</div>
 	);
 };
-export default ChildNode;
+export default Item;

@@ -1,7 +1,7 @@
 import React ,{useEffect,useState} from "react";
-import ChildNode from "../hookinit/ChildNode.jsx";
+import Item from "../双函数组件交互/list.jsx";
 
-const FaterNode = (props) => {
+const Buttons = (props) => {
 	const [visable, setVisable] = useState(false);
 	const [itemVisable, setItemVisable] = useState(false);
 	
@@ -34,4 +34,4 @@ const FaterNode = (props) => {
 		</div>
 	);
 };
-export default FaterNode;
+export default Buttons;
