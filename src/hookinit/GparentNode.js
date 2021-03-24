@@ -1,7 +1,7 @@
-import Buttons from "../双函数组件交互/Buttons.js";
+import FaterNode from "../hookinit/GparentNode.js";
 import React, { useState, useRef, useEffect } from "react";
 
-const Inputs = () => {
+const GparentNode = () => {
 	{/* 这里如果要获取当前28换行的值，最好的办法就是 利用 const inputRefs = useRef();
 	然后在事件里 传值 inputRefs.current.value即可*/}
 
@@ -37,4 +37,4 @@ const Inputs = () => {
 		</div>
 	);
 };
-export default Inputs;
+export default GparentNode;

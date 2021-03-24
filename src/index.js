@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Inputs from './双函数组件交互/Inputs.js';
+import GparentNode from './hookinit/GparentNode.js';
 // import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Inputs />
+    <GparentNode />
   </React.StrictMode>,
   document.getElementById('root')
 );
