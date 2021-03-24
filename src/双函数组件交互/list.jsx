@@ -7,7 +7,7 @@ const Item = (props) => {
 		setState(props.visable);
 	}, [props]);
 
-	{/*这个组件只关闭自己的显示*/ }
+	/*这个组件只关闭自己的显示*/ 
 	function closeSelf() {
 		// body...
 		setState(false);
