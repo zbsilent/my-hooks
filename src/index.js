@@ -1,14 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import GparentNode from './hookinit/GparentNode.js';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import GparentNode from "./hookinit/GparentNode.js";
 // import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <GparentNode />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 // setTimeout(()=>{
 // 	ReactDOM.unmountComponentAtNode(document.getElementById('root'))
