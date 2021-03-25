@@ -7,27 +7,28 @@ const FaterNode = (props) => {
 
   /*这里的生命周期函数监控参数变化，将变化的参数给状态，只要发生更新就给*/
 
-  console.log("B全局变量1:" + props.value);
+  //console.log("B全局变量1:" + props.value);
   useEffect(() => {
     setVisable(props.visable);
-    console.log("B生命周期函数在变化:" + props.value);
+    //console.log("B生命周期函数在变化:" + props.value);
   }, [props]);
 
   const clearChild = () => {
     setVisable(false);
     setItemVisable(false);
     props.action();
-    console.log("B调用到了自己的清除函数");
+    //console.log("B调用到了自己的清除函数");
   };
 
+  // 必须修改上级组件状态值
   const clearItme = () => {
     setItemVisable(false);
-    console.log("必须修改上级组件状态值");
   };
-  // console.log("B全局变量2:"+state);
+
   return (
     <div>
       <input
+        readOnly={true}
         type="text"
         value={visable === false ? "未打开插件" : "已打开子插件"}
         style={{ display: visable ? "none" : "block" }}

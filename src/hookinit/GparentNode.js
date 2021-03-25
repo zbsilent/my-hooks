@@ -8,13 +8,13 @@ const GparentNode = () => {
   const [inputValue, setInputValue] = useState(false);
 
   useEffect(() => {
-    console.log("父组件依然在渲染");
+    //console.log("父组件依然在渲染");
   });
 
   const click = () => {
     //可以利用ref传值
     setInputValue(true);
-    console.log("Aref获取值:" + inputValue);
+    //console.log("Aref获取值:" + inputValue);
   };
 
   /*因为子组件的显示状态由上级控制传递，如果清除了子组件不在此清除主组件的状态那么就是关不掉*/
