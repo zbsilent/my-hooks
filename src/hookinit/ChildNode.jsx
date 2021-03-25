@@ -4,10 +4,11 @@ const ChildNode = (props) => {
   const [state, setState] = useState(false);
 
   useEffect(() => {
-    setState(props.visable);
+   setState(props.visable);
   }, [props]);
 
   /*这个组件只关闭自己的显示*/
+
 
   function closeSelf() {
     // body...
