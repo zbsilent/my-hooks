@@ -2,11 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import GparentNode from "./hookinit/GparentNode.js";
+import LoginComponents from "./hookinit/LoginComponents.jsx";
+
 // import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <GparentNode />
+    <LoginComponents />
   </React.StrictMode>,
   document.getElementById("root")
 );

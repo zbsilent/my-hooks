@@ -15,6 +15,7 @@ const ChildNode = (props) => {
     props.action();
   }
 
+
   const uu = [];
   ["北京", "上海", "成都", "南昌"].forEach((value, index) => {
     uu.push(
