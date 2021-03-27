@@ -1,12 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from './App';
+import GparentNode from "./hookinit/GparentNode.js";
+import LoginComponents from "./hookinit/LoginComponents.jsx";
 
+// import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <LoginComponents />
   </React.StrictMode>,
   document.getElementById("root")
 );
