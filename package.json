@@ -40,6 +40,5 @@
     "nanoid": "^3.1.22",
     "prop-types": "^15.7.2",
     "uuid": "^8.3.2"
-  },
-  "proxy": "http://localhost:5000"
+  }
 }

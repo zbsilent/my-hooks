@@ -6,9 +6,9 @@ const App = (props) => {
 	const getInfo = (url) => {
 		let uri ='';
 		if(url ==='s' ){
-			uri = "http://localhost:3000/students";
+			uri = "http://localhost:3000/api1/students";
 		}else{
-			uri = "http://localhost:3000/cars";
+			uri = "http://localhost:3000/api2/cars";
 		}
 		axios.get(uri).then(
 			(response) => {
