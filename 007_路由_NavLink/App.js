@@ -1,8 +1,8 @@
 import React from "react";
-import {NavLink,BrowserRouter,HashRouter,Route,Switch} from 'react-router-dom'
+import {NavLink,BrowserRouter,HashRouter,Route} from 'react-router-dom'
 import About from './components/About'
 import Home  from './components/Home'
-import TestRouters  from './components/Home'
+import MyNavLink  from './components/MyNavLink'
 import './App.css'
 
 const App = (props) => {
@@ -25,23 +25,20 @@ const App = (props) => {
 			        {/*React中靠路由链接切换组件 BrowserRouter(不出现#)&HashRouter*/}
 			    	{/*编写路由链接*/}
 			    	{/*设计理念问题 navlinke*/}
-			        <NavLink activeClassName ='active' className= "list-group-item" to="/about">About</NavLink>
-			        <NavLink activeClassName ='active' className= "list-group-item" to="/home">Home</NavLink>
-			  		 {/*增加路由链接 就在导航栏告诉他 选择 则出现*/}
-			        {/*<NavLink activeClassName ='active' className= "list-group-item" to="/home">TestRouters</NavLink>*/}
-
+			        {/*<NavLink activeClassName ='active' className= "list-group-item" to="/about">About</NavLink>
+			        <NavLink activeClassName ='active' className= "list-group-item" to="/home">Home</NavLink>*/}
+			    	{/*封装NavLinK*/}
+			    	<MyNavLink to= "/about">About</MyNavLink>
+			    	<MyNavLink to= "/home" >Home</MyNavLink>
+			    	{/*<MyNavLink tp= "/home" title="Home"/>*/}
 		        </div>
 		      </div>
 		      <div className="col-xs-6">
 		        <div className="panel">
 		          <div className="panel-body">
 		         	{/*注册路由*/}
-		         	<Switch>
-				        <Route path="/about" component={About}/ >
-				        <Route path="/home" component={Home}/ >
-				    	{/*持续向下*/}
-				        <Route path="/home" component={TestRouters}/ >
-				    </Switch>
+			        <Route path="/about" component={About}/ >
+			        <Route path="/home" component={Home}/ >
 		          </div>
 		        </div>
 		      </div>
