@@ -37,8 +37,8 @@ const App = (props) => {
 		          <div className="panel-body">
 		         	{/*注册路由*/}
 		         	<Switch>
-				        <Route path="/about" component={About}/ >
-				        <Route path="/home" component={Home}/ >
+				        <Route path="/island/about" component={About}/ >
+				        <Route path="/island/home" component={Home}/ >
 				    	{/*持续向下*/}
 				        <Route path="/home" component={TestRouters}/ >
 				    </Switch>
