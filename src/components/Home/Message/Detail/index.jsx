@@ -1,5 +1,5 @@
 import React from 'react'
-import qs from 'querystring'
+//import qs from 'querystring'
 
 const Detail = (props) => {
     console.log(props);
@@ -10,14 +10,15 @@ const Detail = (props) => {
     ]
     // 接受params参数
     // const { id, title } = props.match.params;
-    const {search} = props.location;
+   // const {search} = props.location;
 
-    const {id,title} = qs.parse(search).slice(1);
-    
+   //const {id,title} = qs.parse(search).slice(1);
+    const {id,title} = props.location.state;
 
-    const res =  xx.find((detailObj)=>{
-        return detailObj.id === id;
-    })
+
+        const res =  xx.find((detailObj)=>{
+            return detailObj.id === id;
+        })
 
   
     return (

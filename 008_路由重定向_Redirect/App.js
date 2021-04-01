@@ -25,8 +25,8 @@ const App = (props) => {
 						{/*React中靠路由链接切换组件 BrowserRouter(不出现#)&HashRouter*/}
 						{/*编写路由链接*/}
 						{/*设计理念问题 navlinke*/}
-						<NavLink activeClassName='active' className="list-group-item" to="/about">About</NavLink>
-						<NavLink activeClassName='active' className="list-group-item" to="/home">Home</NavLink>
+						<NavLink activeClassName='active' className="list-group-item" to="/island/about">About</NavLink>
+						<NavLink activeClassName='active' className="list-group-item" to="/island/home">Home</NavLink>
 						{/*增加路由链接 就在导航栏告诉他 选择 则出现*/}
 						{/*<NavLink activeClassName ='active' className= "list-group-item" to="/home">TestRouters</NavLink>*/}
 
@@ -47,8 +47,8 @@ const App = (props) => {
 								 2.0 %PUBLIC_URL$  绝对路径
 								 3.0 HashRouter搞定*/}
 
-								<Route path="/about" component={About} />
-								<Route path="/home" component={Home} />
+								<Route exact={true} path="/island/about" component={About} />
+								<Route exact path="/island/home" component={Home} />
 								{/*持续向下*/}
 
 								{/* <Route path="/home" component={TestRouters}/ > */}
