@@ -2,28 +2,16 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import store from './redux/store'
-import {Provider} from 'react-redux'
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
 	<React.StrictMode>
-		<Provider store={store}>
+		<BrowserRouter>
 			<App />
-		</Provider>
+		</BrowserRouter>
 	</React.StrictMode>,
 	document.getElementById("root")
 );
-//监听Redux的状态的改变，改变后重新render
-// store.subscribe(() => {
-// 	ReactDOM.render(
-// 		<React.StrictMode>
-// 			<BrowserRouter>
-// 				<App />
-// 			</BrowserRouter>
-// 		</React.StrictMode>,
-// 		document.getElementById("root")
-// 	);
-// })
 // setTimeout(()=>{
 // 	ReactDOM.unmountComponentAtNode(document.getElementById('root'))
 // },10000)
